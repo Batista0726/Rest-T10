@@ -8,12 +8,28 @@ body{
     overflow-y: auto;
     padding: 10px;
     text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    background-image: url(../Imagens/_DSC5951.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1, h2{
     text-align: center;
-    width: 100%;
+    color: white;
+    font-weight: 600;
+    text-shadow: 2px 2px rgb(27, 27, 27);
+    background-color: rgb(29, 29, 29);
+    border-radius: 10px;
+    padding: 3px;
 }
+
 
 .wrap-cards{
     width: 100%;
@@ -25,6 +41,9 @@ h1, h2{
 }
 
 @media (width >= 800px){
+    body{ 
+        background-image: url("../Imagens/pngtree-bar-restaurant-tables-and-chairs-background-picture-image_2859534.jpg");
+      } 
     .wrap-cards{
         width: 100%;
         flex-direction: row;
