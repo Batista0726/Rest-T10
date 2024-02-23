@@ -5,8 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="pedido.js"></script>
+    <link rel="stylesheet" href="pedido.css">
 </head>
 <body>
+    <div id="error" class="error-modal">
+        <p>Insira um nome para começar</p>
+        <button class="error-btn" onclick="fechar()">Entendi!</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button onclick="window.location.href='../Menu/menu.html'" type="button" class="btn btn-dark">Menu</button>
+        <button onclick="window.location.href='../Cardapio/cardapio.html'" type="button" class="btn btn-dark">Cardápio</button>
+      </div> 
     <h1>Pedido</h1>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Insira seu nome">
+      </div>
+    <button type="button" class="btn btn-outline-dark" onclick="comecar()">Começar</button>
+
+    <div id="select-div">
+        <h2>Olá <span id="nomePrint"></span>, vamos começar a escolher sua refeição</h2>
+    </div>
 </body>
 </html>
