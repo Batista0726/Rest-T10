@@ -7,7 +7,7 @@ function show(nome){
     document.getElementById("nomePrint").textContent = nome;
     var div = document.getElementById("select-div");
     if (nome && nome.trim() !== ""){
-        div.style.display = "block";
+        div.style.display = "flex";
         document.getElementById("exampleFormControlInput1").style.background ="nome";
     }else{
         document.getElementById("error").style.display ="flex";
